@@ -1,0 +1,11 @@
+extends index 
+block content
+    body.text-center
+        h1.text-primary Passport : Login
+        br
+        form(action="/userlogin", method="POST")
+            input(name="username" placeholder="Username" required) 
+            input(name="password" placeholder="Password" required) 
+            input(name="submit", type="submit" style="background-color: green")
+        br
+    

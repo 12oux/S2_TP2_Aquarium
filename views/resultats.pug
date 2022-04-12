@@ -1,0 +1,17 @@
+extends index
+block content
+
+  br
+  h1.text-center.text-primary Résultats d'analyse d'eau 
+  .card-block.inline-flex.col-4.m-auto.text-center
+    .card-header.bg-secondary
+      h3
+    .card-body.bg-light
+
+    each resultats in listeResultats
+      li= ["ID: " + resultats.id, "Salinité: " + resultats.salinite, "NO3: " + resultats.no3, "PO4: " + resultats.po4, "Alcalinité: " + resultats.alcalinite, "Calcium: " + resultats.calcium, "Magnesium: " + resultats.magnesium, "PH: " + resultats.ph, "Créé le: " + resultats.createdAt]
+
+    .card-footer.text-center.bg-white
+      a(href="/").btn.btn-outline-danger Retour à la page d'acceuil  
+  br
+

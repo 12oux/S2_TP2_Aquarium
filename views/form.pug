@@ -1,0 +1,25 @@
+extends index.pug
+
+block content
+    br
+    h1.text-center.text-primary Formulaire
+    br
+    .container.text-center
+        form(action="/resultats", method="post")
+            input(type="float", name="salinite", placeholder="Salinité")
+            br
+            input(type="float", name="no3", placeholder="NO3")
+            br
+            input(type="float", name="po4", placeholder="PO3")
+            br
+            input(type="float", name="alcalinite", placeholder="Alcalinité")
+            br
+            input(type="float", name="calcium", placeholder="Calcium")
+            br
+            input(type="float", name="magnesium", placeholder="Magnésium")
+            br
+            input(type="float", name="ph", placeholder="PH")
+            br
+            input(type="submit", value="submit", style="background-color: green")
+            br
+    br
